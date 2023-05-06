@@ -1,0 +1,123 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} home {% endblock title %}
+
+{% block benner_slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/rj.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/rt.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/fr.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+{% endblock benner_slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">
+            Include blocks of text in your custom mobile app. With the Paragraph element, you can add paragraphs for instructions, descriptions, terms and conditions, notes, and more. You can format the text just as you would in a word processor, and you’ll even be able to insert links, images, and tables. No matter how much or how little you write, your app’s paragraphs will be easy to read from any device.
+        </small>
+    </div>
+
+</div>
+{% endblock information %}
+
+{% block main-content %}
+<div class="container">
+  <h2 class="text-center">Dairy Products</h2>
+  <br><br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url 'category' 'MS'%}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/product/greek.jpeg' %}" alt="" class="img-responsive center-block">
+            <p class="mlkpro">Greek Food</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url 'category' 'GH'%}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/product/japonise.jpeg'%}" alt="" class="img-responsive center-block">
+            <p class="mlkpro">japonais food</p>
+
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url 'category' 'CR'%}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/product/amirikane.jpg'%}" alt="" class="img-responsive center-block">
+            <p class="mlkpro">American Food</p>
+
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </br></br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url 'category' 'PN'%}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/product/spanaich.jpeg' %}" alt="" class="img-responsive center-block">
+            <p class="mlkpro">Spanish Food</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url 'category' 'LS'%}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/product/turk.jpg'%}" alt="" class="img-responsive center-block">
+            <p class="mlkpro">Turkish Food</p>
+
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url 'category' 'ML'%}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/product/000.jpeg'%}" alt="" class="img-responsive center-block">
+            <p class="mlkpro">Tajine Malj</p>
+
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    
+{% endblock main-content %}
